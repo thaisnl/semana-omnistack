@@ -19,11 +19,11 @@ const DevSchema = new mongoose.Schema({
     likes: [{
         //como se fosse uma chave estrangeira
         type: mongoose.Schema.Types.ObjectId,
-        red: 'Dev'
+        ref: 'Dev'
     }],
     dislikes: [{
         type: mongoose.Schema.Types.ObjectId,
-        red: 'Dev'
+        ref: 'Dev'
     }]
 }, { timestamps: true })
 
